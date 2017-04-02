@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Papermoon</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+</head>
+
+<body>
+  <a href="" class="hamburger"><span>Menu</span></a>
+  <nav class="sticky">
+    <a href="#" class="close"><span>Close</span></a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#section-1">About</a></li>
+      <li><a href="#food-menu">Menu</a></li>
+      <li><a href="#section-3">Location</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- --------------------------------------------------------- -->
+  <!-- http://alvarotrigo.com/fullPage/#secondPage -->
+  <header>
+    <div class="left-column">
+    </div>
+    <div class="banner">
+      <div class="banner-button">
+        <h2 id="foodBtn">
+        <a id="foodLink" href="#food-menu">OUR MENU</a>
+        </h2>
+      </div>
+    </div>
+  </header>
+  <!-- --------------------------------------------------------- -->
+  <div id="main">
+    <div class="wrapper">
+      <div class="container">
+        <!-- -------------------------- -->
+        <div class="section-1" id="section-1">
+          <div class="about">
+            <div class="logo">
+              <h1>Paper Moon</h1>
+            </div>
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ducimus nobis eveniet enim, veniam aliquam repellat architecto tempore nulla, sed dolorem reiciendis maxime voluptatum animi numquam ipsa tenetur dolore veritatis!</p>
+            <br>
+            <div class="more">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, commodi voluptatibus eligendi. Quam velit repellat minus, sit necessitatibus ad laborum aperiam eaque exercitationem quae vel architecto ex laboriosam nihil modi.</p>
+            </div>
+            <button class="show-more">Read more...</button>
+          </div>
+          <div class="about-image"></div>
+        </div>
+        <!-- -------------------------- -->
+        <div class="section-2" id="section-2">
+          <div class="menu-banner"></div>
+          <h2 id="food-menu">Menu</h2>
+          <nav class="food-menu">
+            <ul>
+              <li><a href="breakfast">All Day Breakfast</a></li>
+              <li><a href="#">Sanwhiches</a></li>
+              <li><a href="#">Salads</a></li>
+              <li><a href="#">Classic Favourites</a></li>
+              <li><a href="#">Pasta</a></li>
+              <li><a href="#">Hot Beverages</a></li>
+            </ul>
+          </nav>
+          <hr>
+          <div class="flickity">
+          <!-- http://flickity.metafizzy.co/options.html -->
+            <div>
+              <a href="item-1"><img src="images/flickity/breakfast-1.jpg" alt="breakfast"></div>
+            </a>
+            <div><img src="images/flickity/breakfast-1.jpg" alt="logo"></div>
+            <div><img src="images/flickity/breakfast-2.jpg" alt="logo"></div>
+            <div><img src="images/flickity/breakfast-1.jpg" alt="logo"></div>
+            <div><img src="images/flickity/breakfast-1.jpg" alt="logo"></div>
+            <div><img src="images/flickity/breakfast-1.jpg" alt="logo"></div>
+          </div>
+        </div>
+        <!-- -------------------------- -->
+        <div class="section-3" id="section-3">
+          <div class="heading">
+            <h2>Location</h2>
+          </div>
+          <div class="location">
+            <div class="contact-form">
+              <h4>Contact Us</h4>
+              <form action="https://formspree.io/your@email.com" method="POST">
+                <p>Name:
+                  <br>
+                  <input type="text" name="name">
+                </p>
+                <p> Email:
+                  <br>
+                  <input type="email" name="_replyto">
+                  <br>
+                  <p>Message:
+                    <br>
+                    <textarea name="message" rows="10" cols="52"></textarea>
+                  </p>
+                  <input type="submit" value="Send">
+              </form>
+            </div>
+            <div id="map-canvas"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------------------------------------------------------- -->
+    <footer id="contact">
+      <div class="footer-logo"></div>
+      <div class="left-footer">
+        <h3>Locate us</h3>
+        <p class="white">437 Beach Road,
+          <br>Mairangi Bay,
+          <br>Auckland, New Zealand</p>
+      </div>
+      <div class="middle-footer">
+        <h3>Contact</h3>
+        <p class="white">Telephone:
+          <br>09 479 8872
+          <br>Email:
+          <br>admin@papermoon.org.nz</p>
+      </div>
+      <div class="right-footer">
+        <h3>Opening Hours</h3>
+        <p class="white">Monday - Sunday:
+          <br>7:30am untill 11:00pm</p>
+      </div>
+    </footer>
+    <!-- --------------------------------------------------------- -->
+  </div>
+  <!------------------------- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!------------------------- custom.js -->
+  <script src="js/custom.js"></script>
+  <!------------------------- Push Drawer Script -->
+  <script src="js/push-drawer.js"></script>
+  <!------------------------- Flickity Script -->
+  <script src="js/flickity.min.js"></script>
+  <script>
+  var elem = document.querySelector('.flickity');
+  var flkty = new Flickity(elem, {
+    contain: true,
+    wrapAround: true
+  });
+  </script>
+  <!------------------------- Google Map Script -->
+  <script src="http://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script>
+  function initialize() {
+    var myLatlng = new google.maps.LatLng(-36.738146, 174.7532955);
+    var mapOptions = {
+      zoom: 20,
+      center: myLatlng,
+      mapTypeId: google.maps.MapTypeId.SATELLITE
+    }
+
+
+    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Papermoon'
+    });
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+</body>
+
+</html>

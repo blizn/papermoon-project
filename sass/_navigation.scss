@@ -1,0 +1,112 @@
+//Main Navigation
+.sticky {
+  position:fixed;
+  left:0;
+  top:0;
+  height:100vh;
+  overflow:hidden;
+  background: #F4F4F2;
+  border-left: 1px solid #cccccc;
+  transition:1s;
+}
+
+nav {
+  display:flex;
+  align-items:center;
+  box-shadow: -2px 0px 5px rgba(213,213,213,.7);
+  z-index: 100;
+}
+
+nav ul {
+  border-top: 1px solid #cccccc;
+  padding:0;
+  list-style:none;
+  width:100%;
+
+}
+
+nav ul li a {
+  padding: .5em 1em;
+  display:block;
+  border-bottom:1px solid #cccccc;
+  transition:1s;
+  text-align:center;
+}
+
+nav ul li a:hover {
+  background:lightgoldenrodyellow;
+}
+
+.hamburger {
+  position:fixed;
+  top:10px;
+  left:.5em;
+  background: url(../images/goldBurger.svg);
+  width:32px;
+  height:32px;
+}
+
+.hamburger span, .close span {
+  clip: rect(1px, 1px, 1px, 1px);
+  position:absolute !important;
+  height:1px;
+  width:1px;
+  overflow:hidden;
+}
+
+.close {
+  position:absolute;
+  top:6px;
+  right:.5em;
+  background: url(../images/clear.svg);
+  width:32px;
+  height:32px;
+}
+
+//Food Menu
+.food-menu {
+  overflow:hidden;
+  background: yellow;
+  transition:1s;
+  border: none;
+}
+
+.food-menu ul {
+  padding: 0;
+  list-style: none;
+  border-top: none;
+  text-align: center;
+}
+
+.food-menu li {
+  margin-right: .5em;
+  border-right: 1px solid #ffffff;
+  display:inline-block;
+}
+
+.food-menu ul li:last-child {
+  border-right: none;
+}
+
+.food-menu ul li a {
+  padding: .5em 1em;
+  transition: 1s;
+  border-bottom:none;
+}
+
+.food-menu ul li a:hover {
+  background: pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

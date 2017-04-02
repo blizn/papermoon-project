@@ -1,0 +1,227 @@
+body {
+  background: black;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 0;
+}
+
+//////////////////////
+//Header
+header {
+  display: flex;
+}
+
+.left-column {
+  background: black;
+  height: 1000px;
+  width: 12%;
+}
+
+.banner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-button {
+  margin-top: 700px;
+  background-color: #000000;
+  border-radius: 18px;
+  border: 2px solid #ffaa00;
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+
+.banner-button:hover {
+  background-color: #fcfcfc;
+}
+
+.banner-button:active {
+  position: relative;
+  top: 1px;
+}
+
+#foodBtn {
+  font-size: 46px;
+  line-height: 1;
+  margin: 0;
+}
+
+#foodLink {
+  font-size: 46px;
+}
+
+//////////////////////
+.container {
+  // margin: 0 auto;
+  // width: 100%;
+  // max-width: 1080px;
+}
+
+.wrapper {
+  background: black;
+}
+
+footer {
+  height: 300px;
+  background: black;
+  display: flex;
+  padding: 1em;
+  justify-content: space-around;
+}
+
+.footer-logo,
+.left-footer,
+.middle-footer,
+.right-footer {
+  padding: 1em;
+  margin-right: 2em;
+}
+
+.footer-logo {
+  background-image: url(../images/logo-sq.png);
+  height: 120px;
+  width: 160px;
+}
+
+.section-1,
+.section-2,
+.section-3 {
+  margin: 0;
+}
+
+//////////////////////
+//Section 1
+.section-1 {
+  display: flex;
+}
+
+.logo {
+  height: 95px;
+  width: 360px;
+  background: url(../images/logo.png);
+}
+
+.about .logo h1 {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.about {
+  padding: 2em 5em;
+  height: 500px;
+  width: 100%;
+  background: #ffffff;
+}
+
+.about-image {
+  background-image: url(../images/about.jpg);
+  height: 565px;
+  width: 100%;
+  background-size: cover;
+  // background-attachment: fixed;
+  background-position: 50% 50%;
+}
+
+//////////////////////
+//Section 2
+.section-2 {
+  background: #ffffff;
+  // display: flex;
+  //height: 1200px;
+}
+
+.section-2 h2 {
+  // padding: .5em;
+  text-align: center;
+}
+
+.flickity {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+//////////////////////
+//Section 3
+.section-3 {
+  background: #ffffff;
+  height: 800px;
+  width: 100%;
+}
+
+.location {
+  padding: 2em 8em;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+#map-canvas {
+  width: 40%;
+}
+
+.contact-form {
+  width: 56%;
+}
+
+.heading {
+  width: 100%;
+  height: 80px;
+  background: #ffa200;
+  margin-bottom: 1em;
+}
+
+.section-3 h2 {
+  text-align: center;
+}
+
+/* Maps
+------------------------------------------*/
+
+#map-canvas {
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+// Contact-Form /////////
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+  font-size: 1em;
+  background: linear-gradient(#eeeeee, #ffffff);
+  border-top: 2px solid #cccccc;
+  border-left: 2px solid #cccccc;
+  border-bottom: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  padding: .5em;
+  margin-top:.5em;
+}
+
+input[type="submit"] {
+  font-size: 1em;
+  border: none;
+  background: linear-gradient(#ffffff, #eeeeee);
+  outline: 0;
+  padding: .5em 1em;
+  border-radius: 15px;
+  text-shadow: 1px 1px 3px rgba(198, 198, 198, 0.9);
+  border: 2px solid #eeeeee;
+  margin-top:1em;
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(#eeeeee, #ffffff);
+  cursor:pointer;
+}
+
