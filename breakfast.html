@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Breakfast</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+</head>
+
+<body>
+
+      <div class="flickity">
+        <div><img src="images/flickity/breakfast-1.jpg" alt="food"></div>
+        <div><img src="images/flickity/breakfast-2.jpg" alt="food"></div>
+        <div><img src="images/flickity/breakfast-3.jpg" alt="food"></div>
+        <div><img src="images/flickity/breakfast-4.jpg" alt="food"></div>
+        <div><img src="images/flickity/breakfast-5.jpg" alt="food"></div>
+      </div>
+    </div>
+  <!------------------------- Flickity Script -->
+  <script src="js/flickity.min.js"></script>
+  <script>
+  var elem = document.querySelector('.flickity');
+  var flkty = new Flickity(elem, {
+    contain: true,
+    wrapAround: true
+  });
+  </script>
+</body>
+
+</html>

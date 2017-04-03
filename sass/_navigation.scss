@@ -95,8 +95,20 @@ nav ul li a:hover {
 }
 
 .food-menu ul li a:hover {
-  background: pink;
+  background: yellow;
 }
+
+//Media Queries
+@media screen and (max-width: 48em) {
+
+  .food-menu li {
+    margin-right: .5em;
+    border-right: 0px solid #ffffff;
+    display: block;
+  }
+
+}
+
 
 
 

@@ -7,5 +7,15 @@ a {
 
 a:hover {
   font-family: 'Architects Daughter', cursive;
-  color: red;
+  color: black;
+}
+
+
+//Media Queries
+@media screen and (max-width: 48em) {
+
+	a {
+	  font-size: 18px;
+	}
+
 }
